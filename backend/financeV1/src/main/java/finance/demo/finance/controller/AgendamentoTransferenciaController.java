@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,7 +18,8 @@ import finance.demo.finance.model.AgendamentoTransferencia;
 import finance.demo.finance.service.AgendamentoTransferenciaService;
 
 @RestController
-@RequestMapping("/agendamento/transferencia/")
+@RequestMapping("/v1/agendamento_transferencia")
+@CrossOrigin
 public class AgendamentoTransferenciaController {
     
     @Autowired
